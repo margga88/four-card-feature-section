@@ -39,8 +39,9 @@ main {
 header {
     width: 320px;
     text-align: center;
-    margin: 40px auto;           
+    margin: 50px auto;           
 }
+
 
 .cards {
     display: grid;
@@ -59,25 +60,34 @@ header {
     border-radius: 5px;
     text-align: left;
     height: 240px;
-    box-shadow: 0px 4px 8px 4px hsl(212, 6%, 88%);
+    box-shadow: 0px 6px 12px 4px hsl(214, 32%, 91%);
             
 }
 
 .card-info {
     margin: 0 35px;
+    padding-top: 10px;
 }
 
 .card-icon {
-    margin: 30px 0px 10px 220px;
+    margin: 35px 0px 10px 220px;
+}
 
+.cards h2 {    
+    margin-bottom: 0px;
+}
+
+.cards p {
+    margin-top: 4px;
 }
 
 
 footer {
     position: fixed;
     width: 100%;
-    height: 28px;
-    bottom: 14px;
+    height: 18px;
+    bottom: 0px;
+    background-color: hsl(212, 12%, 98%);
 }
 
 
@@ -89,7 +99,7 @@ footer {
 
 .normal-text {
     font-weight: var(--ftwgt-200);
-    font-size: 1.5rem;
+    font-size: 1.55rem;
 }
 
 .title-text {
@@ -98,7 +108,7 @@ footer {
 }
 
 .card-title {
-    font-size: 1.3em;
+    font-size: 1.36em;
     color: var(--grey-500);
 }
 
@@ -109,24 +119,25 @@ footer {
 }
 
 .cyan-border {
-    border-top: 5px solid var(--cyan);
+    border-top: 4px solid var(--cyan);
 }
 
 .red-border {
-    border-top: 5px solid var(--red);
+    border-top: 4px solid var(--red);
 }
 
 .orange-border {
-    border-top: 5px solid var(--orange);    
+    border-top: 4px solid var(--orange);    
 }
 
 .blue-border {
-    border-top: 5px solid var(--blue);
+    border-top: 4px solid var(--blue);
 }
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    margin: 0 auto; 
 }
 
 .attribution a { 
@@ -139,13 +150,76 @@ footer {
 /* EXCEPTIONS */
 
 
-@media only screen and (width < 375px) {
-    
-    footer {
-        height: 14px;
-    }
-    
-    .attribution {
+@media only screen and (width < 375px) {  
+       
+    .attribution {        
         font-size: 0.7em;
     }
-} 
+}
+
+@media only screen and (min-width: 1440px) {
+
+    main {
+        width: 80%;        
+    }
+
+    header {
+        width: 500px;
+        margin: 0px auto 85px auto;
+    }    
+
+    .cards {
+        display: grid;
+        width: 100%;       
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 122px);          
+        gap: 15px 0;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 350px;
+    }
+
+    .card-1 {
+        grid-row: 2 / 3;            
+    }
+
+    .card-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .card-3 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .card-4 {
+        grid-column: 3;
+        grid-row: 2 / 3;
+    }
+
+    header p {
+        margin: -5px auto;
+    }
+   
+    .card-icon {
+        margin: 35px 0px 10px 255px;
+    }
+
+
+    .normal-text {
+        font-size: 2.45rem;
+
+    }
+
+    .title-text {
+        font-size: 2.40em;
+    }
+
+}
+
