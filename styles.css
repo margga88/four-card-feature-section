@@ -157,15 +157,15 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
 
     main {
-        width: 80%;        
+        width: 100%;        
     }
 
     header {
         width: 500px;
-        margin: 0px auto 85px auto;
+        margin: 0px auto 45px auto;
     }    
 
     .cards {
@@ -174,14 +174,14 @@ footer {
         justify-items: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 122px);          
-        gap: 15px 0;
+        gap: 10px 5px;
     }
 
     .card-1,
     .card-2,
     .card-3,
     .card-4 {
-        width: 350px;
+        width: 310px;
     }
 
     .card-1 {
@@ -208,9 +208,83 @@ footer {
     }
    
     .card-icon {
-        margin: 35px 0px 10px 255px;
+        margin: 35px 0px 10px 215px;
     }
 
+    .normal-text {
+        font-size: 2.25rem;
+
+    }
+
+    .title-text {
+        font-size: 2.20em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards {
+        gap: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+    main {
+        width: 82%;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 320px;
+    }
+
+    .card-icon {
+        margin: 35px 0px 10px 225px;
+    }
+
+}
+
+@media only screen and (min-width: 1366px) {
+
+    main {
+        width: 80%;
+    }
+    
+    .cards {
+        gap: 15px 0px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    header {        
+        margin: 0px auto 85px auto;
+    }    
+
+    .cards {
+        display: grid;
+        width: 100%;       
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 122px);          
+        gap: 15px 0;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 350px;
+    }
 
     .normal-text {
         font-size: 2.45rem;

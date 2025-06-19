@@ -40,3 +40,6 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+photothumb.db
+screenshot_375.png
+screenshot_1440.png
